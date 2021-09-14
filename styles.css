@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+* #container {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #ff7a7a;
+  background-image: url("./images/bg-intro-desktop.png");
+}
+
+* #container #text-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+}
+
+* #container #text-section .heading {
+  margin-bottom: 30px;
+  font-weight: 800;
+  font-size: 40px;
+}
+
+* #container #text-section .paragraph {
+  padding: 0 30px;
+  text-align: center;
+  width: 70%;
+}
+
+* #container #form-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 400px;
+  width: 800px;
+}
+
+* #container #form-div .trial {
+  background-color: #6055a5;
+  border: none;
+  height: 50px;
+  width: 85%;
+  border-radius: 10px;
+  color: white;
+}
+
+* #container #form-div .trial:hover {
+  cursor: pointer;
+  background: #a255a5;
+}
+
+* #container #form-div .trial .trial-text {
+  font-weight: 600;
+}
+
+* #container #form-div #form {
+  padding: 15px 0;
+  height: 50%;
+  width: 85%;
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border-radius: 10px;
+}
+
+* #container #form-div #form .warning {
+  width: 85%;
+  color: #ff7a7a;
+  font-size: 9px;
+  text-align: right;
+}
+
+* #container #form-div #form input {
+  height: 35px;
+  width: 85%;
+  border-radius: 3px;
+  border: .2px solid gray;
+  padding: 10px;
+}
+
+* #container #form-div #form input:hover {
+  outline: none;
+}
+
+* #container #form-div #form #submit {
+  display: block;
+  width: 85%;
+  background-color: #38cc76;
+  border: none;
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+* #container #form-div #form .note {
+  font-size: 10px;
+  color: #b9b6d3;
+  margin: 15px;
+  text-align: center;
+}
+
+* #container #form-div #form .note .note-text {
+  color: #ff7a7a;
+  font-weight: 900;
+}
+
+@media only screen and (max-width: 770px) {
+  #container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  * #container #form-div {
+    height: 70%;
+    width: 100%;
+  }
+  * #container #form-div #form {
+    padding: 20px 0;
+    height: 70%;
+    max-width: 400px;
+    margin: 15px auto;
+  }
+  * #container #form-div .trial {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  * #container #text-section .heading {
+    font-size: 30px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
